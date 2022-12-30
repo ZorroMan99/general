@@ -42,19 +42,56 @@
                             <div class="col-md-11">создан для ведения продаж в загруженном торговом объекте.</div>
                         </div>
                         <div class="button">
-                          <button type="button" class="btn btn-outline-primary">Подробнее</button>
+                            <button type="button" class="btn btn-outline-primary">Подробнее</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container">
-          <div class="row leader">
-              <h1>Вспомогательные продукты</h1>
-          </div>
-      </div>
+            <div class="row leader">
+                <h1>Вспомогательные продукты</h1>
+            </div>
+        </div>
         <div class="secondary products">
-
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://xn--b1aghajkkgrpl.xn--p1ai/wp-content/uploads/2022/10/egais-1.png.webp"
+                        alt="">
+                    <p>
+                        Microinvest ЕГАИС Менеджер – это специально разработанное приложение, отвечающее всем требованиям
+                        законодательства РФ по работе с системой ЕГАИС. Удобен в работе и прост в применении. Полная
+                        совместимость с рабочим местом собственника (управляющего) – Microinvest Склад Pro.
+                    </p>
+                    <div class="button">
+                        <button type="button" class="btn btn-outline-primary">Подробнее</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="https://xn--b1aghajkkgrpl.xn--p1ai/wp-content/uploads/2022/10/egais-1.png.webp"
+                      alt="">
+                  <p>
+                      Microinvest ЕГАИС Менеджер – это специально разработанное приложение, отвечающее всем требованиям
+                      законодательства РФ по работе с системой ЕГАИС. Удобен в работе и прост в применении. Полная
+                      совместимость с рабочим местом собственника (управляющего) – Microinvest Склад Pro.
+                  </p>
+                  <div class="button">
+                      <button type="button" class="btn btn-outline-primary">Подробнее</button>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                <img src="https://xn--b1aghajkkgrpl.xn--p1ai/wp-content/uploads/2022/10/egais-1.png.webp"
+                    alt="">
+                <p>
+                    Microinvest ЕГАИС Менеджер – это специально разработанное приложение, отвечающее всем требованиям
+                    законодательства РФ по работе с системой ЕГАИС. Удобен в работе и прост в применении. Полная
+                    совместимость с рабочим местом собственника (управляющего) – Microinvest Склад Pro.
+                </p>
+                <div class="button">
+                    <button type="button" class="btn btn-outline-primary">Подробнее</button>
+                </div>
+            </div>
+            </div>
         </div>
     </body>
 @endsection

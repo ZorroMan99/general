@@ -104,7 +104,7 @@ p.product {
     margin-top: auto;
 }
 
-button.btn.btn-outline-primary {
+div.button button.btn.btn-outline-primary {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -114,8 +114,28 @@ button.btn.btn-outline-primary {
     padding: 21.5px 40px;
 }
 
-button.btn.btn-outline-primary:hover {
+div.button button.btn.btn-outline-primary:hover {
     color: white;
 }
 
 /*PRODUCTS END*/
+
+/* PRODUCTS SECONDARY START */
+
+.secondary.products {
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.secondary.products .col-md-4 {
+    text-align: center;
+    background-color: #075E93;
+    padding-top: 13px;
+    border-radius: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 347px;
+}
+/* PRODUCTS SECONDARY END */
