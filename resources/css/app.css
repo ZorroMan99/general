@@ -27,15 +27,19 @@ div.col-md-3.text-end {
 
 /*HEADER END*/
 
-/*PRODUCTS START*/
+/*PRODUCTS PC START*/
+.product h3 {
+    text-transform: uppercase;
+}
 
-.leader>h1 {
+.row>h1 {
     font-weight: 600;
     text-align: center;
     margin-bottom: 25px;
+    font-size: 50px;
 }
 
-.product>div>div>h2 {
+.general.products.pc .product>div>div>h2 {
     font-weight: 600;
     line-height: 90%;
     margin-bottom: 18px;
@@ -46,13 +50,22 @@ div.col-md-3.text-end {
     font-family: Montserrat;
 }
 
-.general.products {
-    width: 1400px;
+.general.products.pc div.product {
     margin-left: auto;
     margin-right: auto;
+    max-width: 1400px;
+    background: rgba(7, 94, 147, 0.08);
     border-radius: 30px;
-    padding: 26px 88px 26px 88px;
-    background-color: #ebf2f6;
+    padding-top: 26px;
+    padding-bottom: 27px;
+    margin-bottom: 60px;
+}
+
+.general.products.pc .product .row {
+    max-width: 1224px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: nowrap;
 }
 
 div.row.check {
@@ -71,7 +84,7 @@ div.row.check>.col-md-1>img {
     margin: 0;
 }
 
-div.row.check>.col-md-11 {
+.general.products.pc div.row.check>.col-md-11 {
     width: 494px;
     padding: 0;
     margin: 0;
@@ -118,24 +131,297 @@ div.button button.btn.btn-outline-primary:hover {
     color: white;
 }
 
-/*PRODUCTS END*/
+/*PRODUCTS PC END*/
 
-/* PRODUCTS SECONDARY START */
+/* PRODUCTS TABLET START */
+.general.products.tablet div.product {
+    width: 727px;
+    padding-left: 69.5px;
+    padding-right: 69.5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: rgba(7, 94, 147, 0.08);
+    border-radius: 30px;
+}
+
+.general.products.tablet .product h2 {
+    text-align: start;
+    font-size: 46px;
+    line-height: 41.4px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.general.products.tablet .product h3 {
+    font-family: 'montserrat';
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.general.products.tablet .product p {
+    text-align: left;
+}
+
+.general.products.tablet .product>img {
+    width: 588px;
+
+}
+
+.general.products.tablet .product .row.check {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+.general.products.tablet .product .row.check .col-md-1 {
+    padding: 0;
+    width: 30px;
+}
+
+.general.products.tablet div.row.check>.col-md-11 {
+    width: 558px;
+    padding: 0;
+    margin: 0;
+}
+
+.general.products.tablet .product button {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+/* PRODUCTS tablet END */
+
+/* PRODUCTS SECONDARY PC START */
+
 
 .secondary.products {
     width: 1220px;
     margin-left: auto;
     margin-right: auto;
 
+
 }
 
-.secondary.products .col-md-4 {
+.secondary.products .col-md-4.pc {
     text-align: center;
-    background-color: #075E93;
-    padding-top: 13px;
+    background-color: #EBF2F7;
+    padding-top: 16px;
+    margin-bottom: 20px;
     border-radius: 20px;
     margin-right: auto;
     margin-left: auto;
+    width: 380px;
+    line-height: 18.28px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.secondary.products .col-md-4.pc p {
+    margin-top: 8px;
+    width: 347px;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+.secondary.products .col-md-4.pc img {
     width: 347px;
 }
-/* PRODUCTS SECONDARY END */
+
+.secondary.products .col-md-4.pc .button {
+    text-align: end;
+    margin-top: auto;
+    margin-bottom: 27px;
+}
+
+.secondary.products .col-md-4.pc button {
+    padding: 16px 47px 16px 47px !important;
+}
+
+b.b500 {
+    font-weight: 500;
+}
+
+/* PRODUCTS SECONDARY PC END */
+
+/* PRODUCTS SECONDARY TABLET START */
+
+.secondary.products .col-md-4.col-md-4.tablet {
+    width: 727px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.secondary.products .col-md-4.col-md-4.tablet .desc {
+    display: flex;
+}
+
+.secondary.products .col-md-4.col-md-4.tablet button {
+    border: 0;
+    color: rgba(7, 94, 147, 1);
+    font-weight: 700;
+    background: none;
+    line-height: 19.5px;
+}
+
+.secondary.products .col-md-4.col-md-4.tablet .button {
+    text-align: end;
+    margin-top: auto;
+}
+
+.secondary.products .col-md-4.col-md-4.tablet p {
+    font-size: 15px;
+    line-height: 18.29px;
+    width: 353px;
+    margin-left: 35px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0;
+    /* height: 178px; */
+}
+
+.secondary.products .col-md-4.col-md-4.tablet img {
+    width: 354px;
+    height: 179px;
+}
+
+/* PRODUCTS SECONDARY TABLET END */
+
+/* PRODUCTS ALL MOB START */
+
+.col-md-4.mob {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 400px;
+}
+
+.col-md-4.mob button {
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    padding: 7.5px 10px;
+    border: 1px solid #075E93;
+}
+
+.col-md-4.mob img {
+    height: 100%;
+    width: 120px;
+}
+
+.col-md-4.mob .desc {
+    display: flex;
+}
+
+.col-md-4.mob .button {
+    text-align: end;
+    margin-top: auto;
+}
+
+/* PRODUCTS ALL MOB START */
+
+/* MEDIA SCREEN START */
+
+@media screen and (max-width:1219px) and (min-width:769px) {
+    .general.products.pc {
+        display: none;
+    }
+
+
+    .secondary>h1 {
+        margin-top: 0;
+
+    }
+
+    .general.products.mob {
+        display: none;
+    }
+
+    .secondary.products .col-md-4.pc {
+        display: none;
+    }
+
+    .secondary.products .col-md-4.mob {
+        display: none;
+    }
+
+    .secondary.products {
+        width: 727px;
+    }
+
+}
+
+@media screen and (max-width:769px) {
+    body h1 {
+        font-size: 35px !important;
+    }
+
+    .secondary.products .col-md-4.tablet {
+        display: none !important;
+    }
+
+    .secondary.products .col-md-4.pc {
+        display: none;
+    }
+
+    .general.products.tablet {
+        display: none;
+
+    }
+
+    .general.products.pc {
+        display: none;
+
+    }
+
+    .secondary.products {
+        max-width: 343px;
+    }
+}
+
+@media screen and (min-width:1220px) {
+    .general.products.tablet {
+        display: none;
+
+    }
+
+    .general.products.mob {
+        display: none;
+    }
+
+    .secondary>h1 {
+        margin-top: 40px;
+    }
+
+    .secondary.products .col-md-4.mob {
+        display: none;
+    }
+
+    .secondary.products .col-md-4.tablet {
+        display: none !important;
+    }
+
+    .secondary.products .col-md-4.mob {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width:768px) {}
+
+/* MEDIA SCREEN END */
