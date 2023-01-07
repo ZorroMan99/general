@@ -2,96 +2,156 @@
 
 @section('content')
 
-    <body>
-        <div class="container">
-            <div class="row leader">
-                <h1>Основыне продукты</h1>
-            </div>
-        </div>
-        <div class="general products">
-            <div class="product">
-                <div class="row">
-                    <div class="col-md-6 product-img">
-                        <img src="https://xn--b1aghajkkgrpl.xn--p1ai/wp-content/uploads/2022/10/skladprolight.png"
-                            alt="skald pro light">
-                    </div>
-                    <div class="col-md-4 product-desc">
-                        <h2>Станция <br>кассира/официанта</h2>
-                        <h3 class="product">MICROINVEST СКЛАД PRO LIGHT</h3>
-                        <p class="product">Microinvest Склад Pro Light предназначен для автоматизации рабочего места кассира
-                            (официанта) и
-                            попадает в категорию «Front Office», т.е. это продукт для обслуживания конкретного
-                            клиента/посетителя.</p>
-                        <div class="row check">
-                            <div class="col-md-1">
-                                <img src="{{ asset('img/svg/check.svg') }}">
-                            </div>
-                            <div class="col-md-11">подходит ко всем типам торговых объектов, магазинов, ресторанов и др.
-                            </div>
-                        </div>
-                        <div class="row check">
-                            <div class="col-md-1">
-                                <img src="{{ asset('img/svg/check.svg') }}">
-                            </div>
-                            <div class="col-md-11">минимальные требования к компьютерной технике.</div>
-                        </div>
-                        <div class="row check">
-                            <div class="col-md-1">
-                                <img src="{{ asset('img/svg/check.svg') }}">
-                            </div>
-                            <div class="col-md-11">создан для ведения продаж в загруженном торговом объекте.</div>
-                        </div>
-                        <div class="button">
-                            <button type="button" class="btn btn-outline-primary">Подробнее</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row leader">
-                <h1>Вспомогательные продукты</h1>
-            </div>
-        </div>
-        <div class="secondary products">
+  <body>
+    <div class="container">
+      <div class="row leader">
+        <h1>Основыне продукты</h1>
+      </div>
+    </div>
+    {{-- pc start --}}
+
+    <div class="general products pc">
+      @foreach ($products as $product)
+        @if ($product->general == 1)
+          <div class="product">
             <div class="row">
-                <div class="col-md-4">
-                    <img src="https://xn--b1aghajkkgrpl.xn--p1ai/wp-content/uploads/2022/10/egais-1.png.webp"
-                        alt="">
-                    <p>
-                        Microinvest ЕГАИС Менеджер – это специально разработанное приложение, отвечающее всем требованиям
-                        законодательства РФ по работе с системой ЕГАИС. Удобен в работе и прост в применении. Полная
-                        совместимость с рабочим местом собственника (управляющего) – Microinvest Склад Pro.
-                    </p>
-                    <div class="button">
-                        <button type="button" class="btn btn-outline-primary">Подробнее</button>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                  <img src="https://xn--b1aghajkkgrpl.xn--p1ai/wp-content/uploads/2022/10/egais-1.png.webp"
-                      alt="">
-                  <p>
-                      Microinvest ЕГАИС Менеджер – это специально разработанное приложение, отвечающее всем требованиям
-                      законодательства РФ по работе с системой ЕГАИС. Удобен в работе и прост в применении. Полная
-                      совместимость с рабочим местом собственника (управляющего) – Microinvest Склад Pro.
-                  </p>
-                  <div class="button">
-                      <button type="button" class="btn btn-outline-primary">Подробнее</button>
-                  </div>
+              <div class="col-md-6 product-img">
+                <img alt="{{ $product->title }}" src="{{ $product->img_pc }}">
               </div>
-              <div class="col-md-4">
-                <img src="https://xn--b1aghajkkgrpl.xn--p1ai/wp-content/uploads/2022/10/egais-1.png.webp"
-                    alt="">
-                <p>
-                    Microinvest ЕГАИС Менеджер – это специально разработанное приложение, отвечающее всем требованиям
-                    законодательства РФ по работе с системой ЕГАИС. Удобен в работе и прост в применении. Полная
-                    совместимость с рабочим местом собственника (управляющего) – Microinvest Склад Pro.
-                </p>
-                <div class="button">
-                    <button type="button" class="btn btn-outline-primary">Подробнее</button>
+              <div class="col-md-4 product-desc">
+                <h2>{!! $product->name !!}</h2>
+                <h3 class="product">{{ $product->title }}</h3>
+                <p class="product">{{ $product->desc_min }}</p>
+                <div class="row check">
+                  <div class="col-md-1">
+                    <img src="{{ asset('img/svg/check.svg') }}">
+                  </div>
+                  <div class="col-md-11">{{ $product->check1 }}</div>
                 </div>
+                <div class="row check">
+                  <div class="col-md-1">
+                    <img src="{{ asset('img/svg/check.svg') }}">
+                  </div>
+                  <div class="col-md-11">{{ $product->check2 }}</div>
+                </div>
+                <div class="row check">
+                  <div class="col-md-1">
+                    <img src="{{ asset('img/svg/check.svg') }}">
+                  </div>
+                  <div class="col-md-11">{{ $product->check3 }}</div>
+                </div>
+                <div class="button">
+                  <button class="btn btn-outline-primary" type="button">Подробнее</button>
+                </div>
+              </div>
             </div>
+          </div>
+        @endif
+      @endforeach
+    </div>
+    {{-- PC END --}}
+    {{-- TABLET SART --}}
+    <div class="general products tablet">
+      @foreach ($products as $product)
+        @if ($product->general == 1)
+          <div class="product">
+            <h2>{!! $product->name !!}</h2>
+            <img alt="{{ $product->title }}" src="{{ $product->img_table }}">
+            <h3 class="product">{{ $product->title }}</h3>
+            <p class="product">{{ $product->desc_min }}</p>
+            <div class="row check">
+              <div class="col-md-1">
+                <img src="{{ asset('img/svg/check.svg') }}">
+              </div>
+              <div class="col-md-11">{{ $product->check1 }}</div>
             </div>
+            <div class="row check">
+              <div class="col-md-1">
+                <img src="{{ asset('img/svg/check.svg') }}">
+              </div>
+              <div class="col-md-11">{{ $product->check2 }}</div>
+            </div>
+            <div class="row check">
+              <div class="col-md-1">
+                <img src="{{ asset('img/svg/check.svg') }}">
+              </div>
+              <div class="col-md-11">{{ $product->check3 }}</div>
+            </div>
+            <div class="button">
+              <button class="btn btn-outline-primary" type="button">Подробнее</button>
+            </div>
+          </div>
+        @endif
+      @endforeach
+    </div>
+    {{-- TABLET END --}}
+    {{-- MOB START --}}
+    <div class="general products mob">
+      <div class="col-md-4 mob">
+        <div class="desc">
+          <img alt="" src="{{ $product->img_mob }}">
+          <div class="row">
+            <p class="title">{{ $product->title }}</p>
+            <p class="desc_thin">{{ $product->desc_thin }}</p>
+          </div>
         </div>
-    </body>
+        <div class="button">
+          <button type="button">Подробнее</button>
+        </div>
+      </div>
+    </div>
+    {{-- MOB END --}}
+
+    <div class="container">
+      <div class="row secondary">
+        <h1>Вспомогательные продукты</h1>
+      </div>
+    </div>
+    <div class="secondary products">
+      <div class="row">
+        @foreach ($products as $product)
+          @if ($product->general == 0)
+            {{-- PC START --}}
+            <div class="col-md-4 pc">
+              <img alt="" src="{{ $product->img_pc }}">
+              <p>
+                <b class="b500">{{ $product->title }}</b> {{ $product->desc_min }}
+              </p>
+              <div class="button">
+                <button class="btn btn-outline-primary" type="button">Подробнее</button>
+              </div>
+            </div>
+            {{-- PC END --}}
+            {{-- TABLE START --}}
+            <div class="col-md-4 tablet">
+              <div class="desc">
+                <img alt="" src="{{ $product->img_table }}">
+                <div class="row">
+                  <p><b class="b500">{{ $product->title }}</b> {{ $product->desc_min }}</p>
+                </div>
+              </div>
+              <div class="button">
+                <button type="button">Подробнее</button>
+              </div>
+            </div>
+            {{-- TABLET END --}}
+            {{-- MOB START --}}
+            <div class="col-md-4 mob">
+              <div class="desc">
+                <img alt="" src="{{ $product->img_mob }}">
+                <div class="row">
+                  <p class="title">{{ $product->title }}</p>
+                  <p class="desc_thin">{{ $product->desc_thin }}</p>
+                </div>
+              </div>
+              <div class="button">
+                <button type="button">Подробнее</button>
+              </div>
+            </div>
+            {{-- MOB END --}}
+          @endif
+        @endforeach
+      </div>
+    </div>
+  </body>
 @endsection
