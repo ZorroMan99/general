@@ -1,22 +1,68 @@
+/* ПРОДУКТЫ */
 
-/* Устройства small (телефоны, 576 пикселей и выше) */
-@media (min-width: 320px) { 
-    .product-img {
-        
+
+.product-desc h2,
+p.desc-min,
+.row.check {
+    display: none;
+}
+
+.container>.product:not(:first-child) {
+    margin-top: 1.25rem;
+}
+
+.col.product-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.row.leader {
+    text-align: center;
+}
+
+.product-img .img-fluid {
+    max-width: 95%;
+}
+
+.product-desc .button {
+    display: flex;
+    justify-content: end;
+    margin-top: auto;
+}
+/* Устройства small (телефоны, 320 пикселей и выше) */
+@media (min-width: 320px) {}
+
+/* Устройства small (телефоны, 420 пикселей и выше) */
+@media (min-width: 420px) {
+    .desc-min {
+        display: block!important;
+    }
+    .desc-thin {
+        display: none;
     }
 }
 
 /* Устройства small (телефоны, 576 пикселей и выше) */
-@media (min-width: 576px) { ... }
+@media (min-width: 576px) {
+    ...
+}
 
 /* Устройства Medium (планшеты, 768 пикселей и выше) */
-@media (min-width: 768px) { ... }
+@media (min-width: 768px) {
+    ...
+}
 
 /* Устройства Large (настольные компьютеры, 992 пикселей и выше) */
-@media (min-width: 992px) { ... }
+@media (min-width: 992px) {
+    ...
+}
 
 /* Устройства X-Large (большие настольные компьютеры, 1200 пикселей и выше) */
-@media (min-width: 1280px) { ... }
+@media (min-width: 1280px) {
+    ...
+}
 
 /* Устройства XX-Large (большие настольные компьютеры, 1400 пикселей и выше) */
-@media (min-width: 1400px) { ... }
+@media (min-width: 1400px) {
+    ...
+}
