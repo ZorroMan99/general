@@ -15,12 +15,18 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->string('product_title');
-            $table->text('product_desc_min');
-            $table->string('product_img_pc');
-            $table->string('product_img_table');
-            $table->string('product_img_mob');
-            $table->string('product_url');
+            $table->string('title');
+            $table->boolean('general')->default(false);
+            $table->string('name');
+            $table->text('desc_min');
+            $table->text('desc_thin');
+            $table->text('check1');
+            $table->text('check2');
+            $table->text('check3');
+            $table->string('img_pc');
+            $table->string('img_table');
+            $table->string('img_mob');
+            $table->string('url');
             $table->timestamps();
         });
     }
