@@ -1,23 +1,46 @@
-/* ПРОДУКТЫ */
-
-
 .product-desc h2,
 p.desc-min,
-.row.check {
+.product-desc>.row.check,
+.container.resheniya {
     display: none;
 }
 
-.container>.product:not(:first-child) {
-    margin-top: 1.25rem;
-}
-
-.col.product-desc {
-    display: flex;
-    flex-direction: column;
+h1.text-center,
+h2 {
+    color: #293048;
 }
 
 .row.leader {
     text-align: center;
+}
+
+/* ГЛАНАЯ START */
+.carousel-caption {
+    color: #0A2535!important;
+    bottom: 1.25rem!important;
+    font-size: 16px;
+    left: 5%!important;
+    right: -10%!important;
+    text-align: left!important;
+}
+.carousel-caption .col-4 {
+    padding: 0;
+    margin-right: -25px;
+}
+.p-4 {
+    height: 90px;
+    border: solid 1px;
+    border-color: #333333;
+    font-size: 18px;
+}
+
+.row.gx-3.gy-4.text-center {
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.container>.product:not(:first-child) {
+    margin-top: 1.25rem;
 }
 
 .product-img .img-fluid {
@@ -29,21 +52,90 @@ p.desc-min,
     justify-content: end;
     margin-top: auto;
 }
+
+.row.mesto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.row.check {
+    font-size: 16px;
+}
+
+.row.check .col-11 {
+    margin-bottom: 10px;
+}
+
+.row.mesto p:not([class]) {
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 22px;
+}
+
+p.lead {
+    font-size: 16px;
+}
+
+button.btn {
+    font-size: 16px;
+    font-weight: 700;
+    color: #075E93;
+    padding: 0;
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    height: 244px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.box img {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-42%, -50%);
+    height: 244px;
+    object-fit: cover;
+}
+/* Устройства small (телефоны, 768 пикселей и выше) */
+@media (min-width: 768px) {
+    .container.resheniya {
+        display: block;
+    }
+}
+/* ГЛАВНАЯ END */
+/* ПРОДУКТЫ START */
+
+
+.col.product-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ПРОДУКТЫ END */
+
 /* Устройства small (телефоны, 320 пикселей и выше) */
 @media (min-width: 320px) {}
 
 /* Устройства small (телефоны, 420 пикселей и выше) */
 @media (min-width: 420px) {
     .desc-min {
-        display: block!important;
+        display: block !important;
     }
+
     .desc-thin {
         display: none;
     }
 }
 
-/* Устройства small (телефоны, 576 пикселей и выше) */
-@media (min-width: 576px) {
+/* Устройства small (телефоны, 375 пикселей и выше) */
+@media (min-width: 375px) {
     ...
 }
 
