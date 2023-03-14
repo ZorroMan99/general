@@ -1,4 +1,4 @@
-@extends('layouts.header')
+@extends('layouts.app')
 <body>
 </body>
 @section('content')
